@@ -1,7 +1,7 @@
    const express = require("express")
    const app = express()
    const importData = require("./flowers.json")
-   const port = process.env.PORT || 4001
+   const port = process.env.PORT || 4001 
 
    //routes here
    app.get("/", (req, res) => {  
