@@ -3,8 +3,8 @@
    const importData = require("./flowers.json")
    const port = process.env.PORT || 4001
 
-   //routes
-   app.get("/", (req, res) => {
+   //routes here
+   app.get("/", (req, res) => {  
        res.send("Flower shop") 
   })
 
