@@ -5,7 +5,7 @@
 
    //routes
    app.get("/", (req, res) => {
-       res.send("Flower shop")
+       res.send("Flower shop") 
   })
 
    app.get("/flowers", (req, res) => {
