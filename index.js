@@ -8,7 +8,7 @@
        res.send("Flower shop") 
   })
 
-   app.get("/", (req, res) => {
+   app.get("/flowers", (req, res) => {
        res.send(importData)
    })
 
