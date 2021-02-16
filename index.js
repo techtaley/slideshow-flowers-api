@@ -1,17 +1,28 @@
-   const express = require("express")
-   const app = express()
-   const importData = require("./flowers.json")
-   const port = process.env.PORT || 4001 
+const server = jsonServer.create()
+const router = jsonServer.router('flowers.json')
+const middlewares = jsonServer.defaults()
+const port = process.env.port || 4001
 
-   //routes here
-   app.get("/", (req, res) => {  
-       res.send("Flower shop") 
-  })
+server.use(middlewares)
+server.use(router)
+server.listen(port, () => {
+    console.log(`Flowers API is listening on port http://localhost:${port}`)
+})  
 
-   app.get("/flowers", (req, res) => {
-       res.send(importData)
-   })
+//    const express = require("express")
+//    const app = express()
+//    const importData = require("./flowers.json")
+//
+//    //routes here
+//    app.get("/", (req, res) => {  
+//        res.send("Flower shop") 
+//   })
 
-   app.listen(port, () => {
-       console.log(`Example app is listening on port http://localhost:${port}`)
-   })
+//    app.get("/flowers", (req, res) => {
+//        res.send(importData)
+//    })
+
+//    app.listen(port, () => {
+//        console.log(`Example app is listening on port http://localhost:${port}`)
+//    })
+
