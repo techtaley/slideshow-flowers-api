@@ -4,7 +4,7 @@
   "description": "flowers api",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"    
+    "start": "node index.js"
   },
   "keywords": [
     "api",
@@ -17,6 +17,6 @@
     "express": "^4.17.1"
   },
   "engines": {
-    "node": "15.0.1" 
-    }
+    "node": "15.0.1"
+  }
 }
